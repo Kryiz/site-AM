@@ -1,0 +1,80 @@
+.services {
+    position: relative;
+    padding-top: 110px;
+    .services__bg {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        font-family: $Mont-bold;
+        font-size: 280px;
+        line-height: 280px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #F2F6FA;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .services__content {
+        width: 1032px;
+        .services__subtitle {
+            font-family: $Rob-reg;
+            font-size: 16px;
+            line-height: 22px;
+            color: $black;
+            margin-bottom: 40px;
+        }
+        .services__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .services__column {
+                display: flex;
+                flex-direction: column;
+                .services__item {
+                    width: 252px;
+                    &:not(:last-child) {
+                        margin-bottom: 40px;
+                    }
+                    .services__title {
+                        position: relative;
+                        font-family: $Mont-bold;
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: -0.02em;
+                        color: $black;
+                        padding: 0 0 26px 0;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            bottom: 14px;
+                            width: 82px;
+                            height: 2px;
+                            background-color: $orange;
+                        }
+                    }
+                    .services__text {
+                        li {
+                            position: relative;
+                            font-family: $Rob-reg;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                            padding: 0 0 0 26px;
+                            &::before {
+                                content: "•";
+                                position: absolute;
+                                top: 1px;
+                                left: 0;
+                                font-weight: 700;
+                            }
+                            &:not(:last-child) {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

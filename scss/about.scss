@@ -1,0 +1,80 @@
+.about {
+    margin-top: 100px;
+    .about__content {
+        .about__main {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            .about__left,
+            .about__right {
+                width: 443px;
+                height: 312px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .about__title {
+                font-family: $Rob-bold;
+                font-size: 14px;
+                line-height: 18px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .about__text {
+                font-family: $Rob-reg;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .about__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                background: $white;
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.07));
+                border-radius: 10px 10px 10px 0px;
+                width: 221px;
+                height: 60px;
+                .about__btn {
+                    font-family: $Rob-reg;
+                    font-size: 12px;
+                    line-height: 152%;
+                    text-transform: uppercase;
+                    color: $black;
+                    padding: 29px 0px;
+                    svg {
+                        margin: 0 0 -1px 12px;
+                    }
+                }
+            }
+        }
+        .about__bottom {
+            display: flex;
+            justify-content: center;
+            gap: 116px;
+            .about__info {
+                font-family: $Rob-reg;
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+                text-align: center;
+            }
+            .about__info-large {
+                font-family: $Mont-bold;
+                font-size: 70px;
+                line-height: 100px;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+            }
+            .about__info-middle {
+                font-family: $Mont-bold;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

@@ -1,0 +1,278 @@
+.hero {
+    position: relative;
+    height: calc(100vh - 60px);
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../src/img/hero/MaskGroup.png");
+    background-size: cover;
+    .hero__dots-top {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .hero__main {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        .hero__left {
+            flex: 1 1 55%;
+            .hero__title {
+                font-family: $Mont-bold;
+                font-weight: 700;
+                font-size: 46px;
+                line-height: 56px;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                color: $black;
+            }
+            .hero__subtitle {
+                font-family: $Mont-bold;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 46px;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+                color: $black;
+                margin: 10px 0 40px 0;
+            }
+            .hero__lists {
+                margin-bottom: 40px;
+                & li {
+                    position: relative;
+                    font-family: $Rob-reg;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $black;
+                    padding: 0 0 10px 46px;
+                    &::before {
+                        content: "•";
+                        position: absolute;
+                        top: 2px;
+                        left: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .hero__btn {
+                display: flex;
+                gap: 40px;
+                font-family: $Rob-reg;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 152%;
+                text-transform: uppercase;
+                padding: 0 0 0 46px;
+                .hero__price {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 29px 0px 29px 26px;
+                    gap: 10px;
+                    width: 157px;
+                    height: 60px;
+                    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
+                    color: $black;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 22px;
+                        left: 0;
+                        width: 16px;
+                        height: 16px;
+                        background: url("../src/img/hero/rub.png");
+                    }
+                }
+                .hero__proposal {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 29px 0px;
+                    gap: 10px;
+                    width: 221px;
+                    height: 60px;
+                    background: #94e3fc;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+                    border-radius: 10px 10px 10px 0px;
+                    color: $black;
+                }
+            }
+        }
+        .hero__right {
+            position: relative;
+            flex: 1 1 45%;
+            z-index: -5;
+            .hero__right-wrapper {
+                position: absolute;
+                top: -135px;
+                left: -55px;
+                width: 544px;
+                height: 635px;
+                z-index: -4;
+                background-image: url(../src/img/hero/rightDots.png);
+            }
+            img {
+                position: relative;
+                width: 428px;
+                height: 408px;
+                z-index: -5;
+            }
+        }
+        .hero__markers {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(((100vw - 1140px) / 2) + 766px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            .hero__num {
+                position: relative;
+                font-family: $Rob-bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+                writing-mode: vertical-lr;
+                -webkit-writing-mode: vertical-lr;
+                -ms-writing-mode: vertical-lr;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -25px;
+                    left: -6px;
+                    width: 30px;
+                    height: 1px;
+                    background-color: $black;
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                }
+            }
+            .hero__markers-dots {
+                margin: 32px 0 38px;
+            }
+            .hero__timer {
+                position: relative;
+                font-family: $Rob-reg;
+                font-size: 14px;
+                line-height: 18px;
+                color: $black;
+                padding: 10px 11px;
+                border: 0.5px solid #bac2ca;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                svg {
+                    position: absolute;
+                    top: -2px;
+                    left: -3px;
+                    width: 43px;
+                    height: 42px;
+                }
+            }
+        }
+        .hero__design {
+            position: absolute;
+            top: 123px;
+            left: 780px;
+            font-family: $Mont-bold;
+            font-size: 222px;
+            line-height: 200px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #e2eaf2;
+            opacity: 0.5;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            z-index: 0;
+        }
+    }
+    .announce {
+        .announce__content {
+            position: relative;
+            .announce__main {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 998px;
+                height: 180px;
+                padding: 46px 60px 46px 0;
+                .announce__title {
+                    font-family: $Rob-bold;
+                    font-size: 14px;
+                    line-height: 18px;
+                    width: fit-content;
+                    color: $white;
+                    padding: 0 0 10px 0;
+                    border-bottom: 2px solid $orange;
+                }
+                .announce__text {
+                    font-family: $Rob-reg;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $white;
+                    padding: 5px 0 0 0;
+                }
+                &::after {
+                    content: "+";
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: -60px;
+                    right: -65px;
+                    width: 60px;
+                    height: 60px;
+                    font-size: 32px;
+                    color: $white;
+                    background-color: $black;
+                    opacity: 0.9;
+                    border-radius: 10px 10px 10px 0px;
+                    z-index: -1;
+                }
+            }
+            .announce__dots {
+                position: absolute;
+                left: calc(((100vw - 1140px) / 2) + 716px);
+                bottom: 30px;
+                width: 122px;
+                height: 84px;
+            }
+        }
+    }
+    .announce__background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(((100vw - 1140px) / 2) + 998px);
+        height: 180px;
+        background-color: $black;
+        opacity: 0.9;
+        z-index: -1;
+    }
+}
